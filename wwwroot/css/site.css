@@ -21,3 +21,55 @@ body {
 .faded {
     opacity: 0.10;
 }
+
+.list{
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items:center;
+    align-content: center;
+}
+
+.item {
+    /* I'll need to use a grid here */
+    min-width: 30rem;
+    max-width: 40ch;
+    min-height: 10rem;
+    background-color: lightgray; /* Background color for visibility */
+    border: 1px solid black; /* Optional: Border for definition */
+    border-color: chartreuse;
+}
+
+.item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: dashed;
+    border-color: black;
+    align-items: stretch;
+}
+
+.item.item-footer
+{
+
+}
+
+.item-header:nth-of-type()
+{
+    align-self:center;
+    justify-content: flex-end;
+}
+
+#redflag{
+    min-height:2rem;
+    min-width: 2rem;
+    background-image: src(../lib/Images/flag.png);
+}
+
+.item-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: dashed;
+    border-color: crimson;
+}
