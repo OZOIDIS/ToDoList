@@ -15,4 +15,9 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: url(/lib/Images/crayons_bg.webp);
+}
+
+.faded {
+    opacity: 0.10;
 }
